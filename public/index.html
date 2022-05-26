@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IPL|DAPP</title>
+    <meta author="Sahil Kaling" />
+    <meta name="description" content="IPL DAPP" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.4-rc.0/web3.min.js"
+      integrity="sha512-RGPKVfQewHGfk9yaB7ThGPKAQU+civS5awsfStLg22jrWbqgDkNzPtIwNFpFApr3ccjB730SRxi+KnDjhIuTpw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body class="text-center">
+    <div class="details">
+      <br />
+      <h1>IPL 2022</h1>
+      <h4>A blockchain based IPL Winner voting platform</h4>
+      <hr />
+    </div>
+    <div class="cover" id="cover">
+      <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+      &nbsp; Connecting to BlockChain
+    </div>
+    <div class="landing" id="landing">
+      <div class="card" style="width: 18rem" id="i0">
+        <img
+          class="card-img-top"
+          src="https://pbs.twimg.com/media/EQtmN0fUcAAnCyu?format=jpg&name=small"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Royal Challengers Bangalore</h5>
+          <button class="btn btn-primary" id="vote0" onclick="vote(this)">
+            Vote <strong id="v0">1</strong>
+          </button>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem" id="i1">
+        <img
+          class="card-img-top"
+          src="https://imgk.timesnownews.com/media/Gujarat_Titans_logo.png"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Gujrat Titans</h5>
+
+          <button class="btn btn-primary" id="vote1" onclick="vote(this)">
+            Vote <strong id="v1">1</strong>
+          </button>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem" id="i2">
+        <img
+          class="card-img-top"
+          src="https://static.toiimg.com/thumb/msid-77990255,width-1200,height-900,resizemode-4/.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Rajasthan Royals</h5>
+          <button class="btn btn-primary" id="vote2" onclick="vote(this)">
+            Vote <strong id="v2">1</strong>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="bundle.js"></script>
+</html>
