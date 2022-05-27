@@ -44,17 +44,12 @@ let contractABI = [
     constant: true,
   },
 ];
-document.getElementById("landing").style.display = "none";
 let contractAddress = "0x11bDD936C95cE93c6336976a5aa3F62664a3Ff0E";
 let web3 = new Web3("http://127.0.0.1:9545/");
 let ipl = new web3.eth.Contract(contractABI, contractAddress);
 
 document.addEventListener("DOMContentLoaded", () => {
   refresh();
-  if (web3) {
-    document.getElementById("landing").style.display = "flex";
-    document.getElementById("cover").style.display = "none";
-  }
 });
 
 const refresh = () => {
