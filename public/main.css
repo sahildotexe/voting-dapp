@@ -20,3 +20,8 @@
 .card img {
   height: 240px;
 }
+
+.landing {
+  display: flex;
+}
+
